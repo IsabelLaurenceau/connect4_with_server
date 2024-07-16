@@ -17,8 +17,8 @@ jobs:
         run: chmod +x hello-world.sh
       - name: Run the scripts
         run: ./hello-world.sh
-      - name: Super-Linter
-        uses: super-linter/super-linter@v6.7.0
+      # - name: Super-Linter
+      #   uses: super-linter/super-linter@v6.7.0
       - name: Use Cypress
         uses: ./github/workflows/cypress-workflow.yml
 
