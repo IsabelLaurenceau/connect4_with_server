@@ -5,8 +5,9 @@ jobs:
   check-bats-version:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      # This step checks out a copy of your repository.
+      - name: My first step - check out repository
+      uses: actions/checkout@v4
+      # This step references the directory that contains the action.
       - name: Use local hello-world-action
-        uses: IsabelLaurenceau/connect4_with_server/.github/actions/hello-world-action
-      - run: npm install -g bats
-      - run: bats -v
+      uses: ./.github/actions/hello-world-action
