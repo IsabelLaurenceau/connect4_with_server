@@ -19,7 +19,7 @@ jobs:
         run: ./hello-world.sh
   run-cypress:
     name: Use Cypress
-    uses: ./github/workflows/cypress-workflow.yml
+    uses: ./.github/workflows/cypress-workflow.yml
 
       # - run: npm install
       # - run: npm start
